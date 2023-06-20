@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        width: 341px;
+        height: 500px;
+        margin:22px auto;
+    }
+</style>
+
+<body style="text-align: center;">
+    <form>
+    <fieldset>
+        <legend>Registration</legend>
+        <label>Enter First Name:</label>
+        <input type="text" placeholder="First Name"maxlength="5"/>
+        <br>
+        <br>
+        <label>Enter Last Namne:</label>
+        <input type="text" placeholder="Last Name" maxlength="5"/>
+        <br>
+        <br>
+        <label>Gender:</label>
+        <input type="radio"id="G1"name="gender"value="Male"/>Male 
+        <input type="radio"id="G2"name="gender"value="Female"/>Female
+        <br>
+        <label>Hobby:</label><br>
+        <span>
+             &nbsp;  &nbsp;  &nbsp; Dancing: <input type="checkbox" name="Dance"><br>
+             &nbsp;  &nbsp;  &nbsp; Singing: <input type="checkbox" name="Sing"><br>
+             &nbsp;  &nbsp;  &nbsp; Playing: <input type="checkbox" name="Play"><br>
+        </span>   
+        <label>DOB:</label>
+        <input type="date" id="date"><br>
+        <label>For Color:</label>
+        <input type="color" id="color"><br>
+        <label>Volume</label>
+        <input type="range" value="subit"><br>
+        <label>Address:</label>
+        <textarea name="Address" id="address" cols="20" rows="10"></textarea><br>
+        <input type="button"value="submit"/>
+    </fieldset>
+    </form>
+</body>
+</html>
