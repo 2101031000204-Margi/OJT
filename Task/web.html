@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <style type="text/css">
+        #R1{
+            height: 60px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #R1C1{
+            width: 30%;
+            margin-right: 0%;
+            cursor: pointer;
+        }
+        #R1C2{
+            width:70%
+        }
+        #R1C2 ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        #R1C2 ul li a{
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        #R1C2 ul li::after{
+            content: '';
+            height: 3px;
+            width:0%;
+            background: #009688;
+            position: absolute;
+            left:0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        #R1C2 ul li:hover::after{
+            width:100%
+        }
+        #R1 div{
+            float:left;height: 32px;
+            padding-top: 14px;text-align: center;
+            padding-bottom: 14px;
+            background-color: transparent;
+            
+        }
+        body{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a5/The_White_Desert_in_Kutch%2C_the_great_rann_of_kutch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #R2{
+            height: 90px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            transform: translateY(-50%);
+            color: #fff;
+            top: 25%;
+        }
+        #R3{
+            height:90px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            transform: translateY(-50%);
+            color: #fff;
+            top: 40%;
+        }
+        #R4{
+            height: 500px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #R4C1{
+            width: 30%;
+            margin-right: 2%;
+            margin-left: 2%;
+            top: 70%;
+            
+        }
+        #R4C1 img{
+            width:100%;
+            height: auto;
+        }
+    
+        #R4C2{
+            width:30%;
+            margin-right: 2%;
+            margin-left: 1%;
+            top: 70%;
+        }
+        #R4C2 img{
+            width: 100%;
+            height: auto;
+        }
+        #R4C3{
+            width:30%;
+            margin-right: 2%;
+            margin-left: 1%;
+        }
+        #R4C3 img{
+            width: 100%;
+            height: auto;
+        }
+        #R4 div{
+            float:left;height: 220px;
+            padding-top: 280px;text-align: center;
+            
+        }
+        
+        
+
+    </style>
+</head>
+<body>  
+    <div id="R1">
+    
+        <div id="R1C1">
+            
+            <i class="fa fa-plane" style="font-size:40px;color: #fff;"></i>
+        </div>
+        <div id="R1C2">
+         <ul>
+            
+                <li><a href="">Home</a></li>
+                <li><a href="">Region</a></li>
+                <li><a href="">About</a></li>
+         </ul>       
+        </div>
+    </div>
+    <div id="R2">
+        <h1>KUTCH</h1>
+        
+    </div><br>
+    <div id="R3">
+        <p>"KUTCH nahi dekha to kuch nai dekha"</p>
+        <p>kuch din to gujaro GUJARAT mein</p>
+    </div> 
+    <div id="R4">
+        <div id="R4C1">
+            <img src="/img/kutch.jpg"alt="rann"/>
+        </div>
+        <div id="R4C2">
+            <img src="https://www.holidify.com/images/bgImages/KUTCH.jpg" alt="deesert of kutch">
+            
+        </div>
+        <div id="R4C3">
+            <img src="https://www.flamingotravels.co.in/blog/wp-content/uploads/2021/01/Rann-Utsav-Tour-Packages.jpg" alt="Garba in desert">
+            
+        </div>
+    </div> 
+
+   
+</body>
+</html>

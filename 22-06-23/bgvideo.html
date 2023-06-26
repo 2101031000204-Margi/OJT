@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgvdo</title>
+    <style type="text/css">
+        .fullscreen_bg{
+            position: fixed;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: cover;
+        }
+        .fullscreen_bg_video{
+            position: fixed;
+            width: 100%;
+            height: auto;
+            
+        }
+        h2{
+            color: rgb(89, 6, 34);
+            text-align: center;
+            font-size: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen_bg">
+        <video src="vdo.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+    </div>
+    <div>
+        <h2>Hello CSS</h2>
+        <h2>Welcome to the world of coding</h2>
+    </div>
+</body>
+</html>

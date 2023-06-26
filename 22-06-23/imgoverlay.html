@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid #000;
+            width:400px;
+            position: relative;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+        .box img{
+            width:100%;
+            height:auto;
+        }
+        .content{
+            background-color:rgba(0,0,0,0.8);
+            color: #fff;
+            position:absolute;
+            top:0;
+            left:-100%;
+            height:100%;
+            padding: 20px;
+            box-sizing: border-box;
+            width:100%;
+            transition: all 0.5s;
+        }
+        .box:hover .content{
+            left:0;
+            
+        }
+        .content p{
+            border-top: 2px solid pink;
+            border-bottom: 2px solid pink;
+        }
+        .box2{
+            width: 400px;
+            border:2px solid #000;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box2 img{
+            width:100%;
+            height:auto;
+        }
+        .box2:hover img{
+            transform: scale(0);
+            transition: all 0.4s;
+        }
+        .box2 .box2content{
+            background-color: palevioletred;
+            color: white;
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            padding: 30px;
+            box-sizing: border-box;
+            transform: scale(0) rotate(-180deg);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        .box2:hover .box2content{
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+            transition-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <!--Hover Effect-->
+    <h3 style="text-align: center;">Hover Effect</h3>
+    <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg/640px-Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg" alt="Thar">
+        <div class="content">
+            <h3>Thar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita numquam vel quidem esse exercitationem ab dolorem fugit in, repudiandae rem consequatur eligendi quo? Veritatis eveniet ipsum optio exercitationem commodi.</p>
+        </div>
+    </div><hr/>
+    <!--Zoom out Effect-->
+    <h3 style="text-align: center;">Zoom Out-hover Effect</h3>
+    <div class="box2">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg/640px-Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg" alt="Thar">
+        <div class="box2content">
+            <h3>Thar</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, fuga nihil. Quisquam, amet! Aliquam at, doloribus tempora ea provident consectetur praesentium! Adipisci quo commodi dolores nisi possimus temporibus magnam praesentium.</p>
+        </div>
+    </div><hr/>
+</body>
+</html>

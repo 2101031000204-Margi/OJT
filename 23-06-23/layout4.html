@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout4</title>
+    <style type="text/css">
+        #R1{
+            height: 60px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #R1C1{
+            width: 30%;
+            margin-right: 0%;
+        }
+        #R1C2{
+            width:70%
+        }
+        #R1 div{
+            float:left;height: 32px;
+            padding-top: 14px;text-align: center;
+            padding-bottom: 14px;
+            background-color: gray;
+        }
+        .row{
+            width:100%;
+            margin-top: 10px;height: 100px;
+
+        }
+        .col{
+            width:20%;
+            height:100px;
+            background-color: gray;
+            float:left;
+        }
+       .col:nth-child(2),.col:nth-child(3){
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        #R3{
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #R3C1{
+            width: 30%;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+        #R3C2{
+            width:30%;
+            margin-right: 2%;
+            margin-left: 1%;
+        }
+        #R3C3{
+            width:30%;
+            margin-right: 2%;
+            margin-left: 1%;
+        }
+        #R3 div{
+            float:left;height: 200px;
+            text-align: center;
+            background-color: gray;margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="R1">
+    
+        <div id="R1C1">
+        <b>Logo</b>
+        </div>
+        <div id="R1C2">
+          <b>Navigation</b>
+        </div>
+    </div>
+    <div class="row">
+         <div class="col"></div>
+         <div class="col"></div>
+         <div class="col"></div>
+         <div class="col"></div>
+    </div>  
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+   </div>  
+   <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+</div>  
+<div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+</div>  
+<div id="R3">
+    <div id="R3C1">
+        <b>Box1</b>
+    </div>
+    <div id="R3C2">
+        <b>Box2</b>
+    </div>
+    <div id="R3C3">
+        <b>Box3</b>
+    </div>
+</div>    
+<div id="R4">
+ <b>Footer</b>
+</div>
+    
+
+</body>
+</html>
