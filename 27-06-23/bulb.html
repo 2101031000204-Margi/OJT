@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <img src="/offbulb.jpg" alt="offbulb" id="bulb">
+
+    <script>
+        var a = document.getElementById("bulb");
+      a.addEventListener("mouseover",()=>{
+        a.src= "/bulb2.jpg";
+      });
+      a.addEventListener("mouseout",()=>{
+        a.src="/offbulb.jpg";
+      });
+        
+    </script>
+</body>
+
+</html>
