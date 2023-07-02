@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        #drag{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+        }
+        #drag p{
+            color: white;
+            text-align: center;
+            padding-top: 30%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#drag").draggable();
+        });
+    </script>
+</head>
+<body>
+    <div id="drag"><p>Drag me!!</p></div><hr/><br><br>
+</body>
+</html>

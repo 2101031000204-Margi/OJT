@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        #sortable,#sortable2,#sortable1{
+            list-style-type: none;
+            margin: 0; padding: 0;width: 60%;
+        }
+        #sortable li,#sortable2 li,#sortable1 li{ margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+        #sortable .list{
+            border: 3px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            background-color: beige;
+        }
+        #sortable2 .list2,#sortable1 .list1{
+            border: 3px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            background-color: beige;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#sortable").sortable();
+        });
+        $(function(){
+            $("#sortable1,#sortable2").sortable({
+                connectWith:".connectedSortable"
+            }).disableSelection();
+        });
+    </script>
+</head>
+<body>
+    <ul id="sortable">
+      <div class="list">  <li>A</li> </div>
+      <div class="list">  <li>B</li> </div>
+      <div class="list">  <li>C</li> </div>
+      <div class="list">  <li>D</li> </div>
+    </ul><hr/><br><br>
+    <!-- connected sortable -->
+    <b>Connected List</b>
+    <ul id="sortable1" class="connectedSortable">
+        <div class="list1">  <li>A</li> </div>
+        <div class="list1">  <li>B</li> </div>
+        <div class="list1">  <li>C</li> </div>
+        <div class="list1">  <li>D</li> </div>
+      </ul><hr/>
+    <ul id="sortable2" class="connectedSortable">
+        <div class="list2">  <li>A</li> </div>
+        <div class="list2">  <li>B</li> </div>
+        <div class="list2">  <li>C</li> </div>
+        <div class="list2">  <li>D</li> </div>
+      </ul>
+</body>
+</html>

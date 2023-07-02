@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        //accordian
+        $(function () {
+            $("#accordion").accordion();
+        });
+        //datepicker
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+        //slider-range
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [40, 250],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- accordian -->
+    <div id="accordion">
+        <h3>Silver Oak University</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae neque rerum distinctio quibusdam sint
+                accusamus necessitatibus magnam, dolores eos aut placeat facere delectus deserunt quis debitis
+                repudiandae iure fugiat consequatur.
+            </p>
+        </div>
+        <h3>SOCET</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit cumque non aperiam eaque facilis,
+                esse nesciunt corporis. Illo soluta eum incidunt cumque sed deserunt dolorem asperiores aliquam
+                perspiciatis officiis.
+            </p>
+        </div>
+        <h3>SOCAT</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque deleniti et ipsam qui
+                adipisci cupiditate facere delectus ratione. Officia necessitatibus officiis, minima hic in at excepturi
+                rerum iste deleniti.
+            </p>
+        </div>
+        <h3>ASOIT</h3>
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit optio excepturi cum delectus illum
+                exercitationem! Ut numquam amet hic nulla quas atque et nisi, reiciendis aperiam, maxime nemo
+                perspiciatis facilis.
+            </p>
+        </div>
+    </div><br><br>
+    <!-- DatePicker -->
+    <span>Date:</span>
+    <input type="text" id="datepicker"><br><br>
+    <!-- slider -->
+    <p>
+        <label for="amount">Price range:</label>
+        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+      </p>
+       
+      <div id="slider-range"></div>
+</body>
+
+</html>
